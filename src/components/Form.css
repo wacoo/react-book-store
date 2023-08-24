@@ -1,18 +1,17 @@
 .frm {
-    width: 40%;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-    border: gray solid 2px;
+  width: 40%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border: gray solid 2px;
 }
 
 .frm input {
-    width: 30%;
-    height: 20px;
-    text-align: center;
-    margin: 8px;
+  width: 30%;
+  height: 20px;
+  text-align: center;
+  margin: 8px;
 }
-
