@@ -1,0 +1,21 @@
+.book-list {
+    width: 50%;
+    padding: 24px;
+    background-color: aliceblue;
+    border: gray solid 2px;
+    /* border: blue solid 2px; */
+}
+
+.book-list-wrapper {
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.book-list h1 {
+    width: 100%;
+    text-align: center;
+}
