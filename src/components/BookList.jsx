@@ -1,6 +1,7 @@
 import Book from './Book';
 import './BookList.css';
 import NavBar from './NavBar';
+import Form from './Form';
 
 const BookList = () => {
   const bookList = [
@@ -8,37 +9,55 @@ const BookList = () => {
       id: 1,
       book: 'Name of the wind',
       author: 'Patrick Rothfuss',
+      category: 'Fantasy',
+      progress: 50,
+      chapter: '150: Chandrian',
     },
     {
       id: 2,
-      book: 'Wise man\'s fear',
-      author: 'Patrick Rothfuss',
+      book: 'Origin',
+      author: 'Dan Brown',
+      category: 'Mystrey',
+      progress: 75,
+      chapter: '250: Mystrey of life',
     },
     {
       id: 3,
-      book: 'Storm light archives',
-      author: 'Brandon Sanderson',
+      book: 'Born a crime',
+      author: 'Trevor Noah',
+      category: 'Biography',
+      progress: 25,
+      chapter: '45: A day in Johansburg',
     },
     {
       id: 4,
-      book: 'Song of ice and fire',
+      book: 'Song of ice and fire 1',
       author: 'George R.R Martin',
+      category: 'Fantasy',
+      progress: 5,
+      chapter: '65: Eternal war',
     },
   ];
 
   return (
     <>
       <NavBar />
-      <div className="book-list-wrapper">
-        <h2>List of books</h2>
-        <table className="book-list">
-          {
+      <div className="book-list">
+        {
             bookList.map((book) => (
-              <Book id={book.id} book={book.book} author={book.author} key={book.id} />
+              <Book
+                id={book.id}
+                book={book.book}
+                author={book.author}
+                category={book.category}
+                progress={book.progress}
+                chapter={book.chapter}
+                key={book.id}
+              />
             ))
           }
-        </table>
       </div>
+      <Form />
     </>
   );
 };

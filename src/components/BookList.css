@@ -1,15 +1,12 @@
 .book-list {
-  width: 50%;
+  width: 70%;
   padding: 24px;
-  background-color: aliceblue;
-  border: gray solid 2px;
-
-  /* border: blue solid 2px; */
 }
 
 .book-list-wrapper {
   width: 100%;
   display: flex;
+  padding: 24px;
   flex-direction: column;
   justify-content: center;
   align-items: center;

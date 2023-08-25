@@ -4,10 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightgrey;
+  background-color: #fff;
 }
 
 .header h1 {
+  color: rgb(32, 190, 243);
   margin: 0 24px;
 }
 
