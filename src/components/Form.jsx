@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Form.css';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../features/book/bookSlice';
+import { addBook } from '../features/books/bookSlice';
 
 const Form = () => {
   const [uid, setUid] = useState(2);
