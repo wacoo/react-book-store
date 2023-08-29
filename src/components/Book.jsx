@@ -1,47 +1,45 @@
-import PropTypes from 'prop-types';
 import './Book.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { removeBook } from '../features/book/bookSlice';
 
-const Book = (props) => {
-  const {
-    id, book, author, category, progress, chapter,
-  } = props;
-  return (
-    <div className="book" id={id}>
+const Book = () => {
+  const books = useSelector((store) => store.book);
+  const dispatch = useDispatch();
+
+  return books.map((book) => (
+    <div className="book" id={book.id} key={book.id}>
       <div className="book-col">
-        <p className="category">{category}</p>
-        <h3>{book}</h3>
-        <p>{author}</p>
+        <p className="category">{book.category}</p>
+        <h3>{book.book}</h3>
+        <p>{book.author}</p>
         <div className="action-buttons">
-          <button type="button">Comments</button>
-          <button className="non-first-button" type="button">Remove</button>
-          <button className="non-first-button" type="button">Edit</button>
+          <button type="button" className="first-button">Comments</button>
+          <button className="non-first-button middle-button" type="button" onClick={() => dispatch(removeBook(book.id))}>
+            Remove
+          </button>
+          <button className="non-first-button last-button" type="button">
+            Edit
+          </button>
         </div>
       </div>
       <div className="progress">
-        <CircularProgressbar value={progress} text={`${progress}%`} />
+        <CircularProgressbar value={book.progress} text={`${book.progress}%`} />
         <p>Completed</p>
       </div>
       <div>
         <p className="chapter-title">CONTENT CHAPTER</p>
         <span>
           {'Chapter '}
-          { chapter }
+          {book.chapter}
         </span>
         <br />
         <br />
         <button type="button">UPDATE PROGRESS</button>
       </div>
     </div>
-  );
+  ));
 };
-
-Book.propTypes = { id: PropTypes.number.isRequired };
-Book.propTypes = ({ book: PropTypes.string.isRequired });
-Book.propTypes = ({ author: PropTypes.string.isRequired });
-Book.propTypes = { progress: PropTypes.number.isRequired };
-Book.propTypes = ({ chapter: PropTypes.string.isRequired });
-Book.propTypes = ({ category: PropTypes.string.isRequired });
 
 export default Book;

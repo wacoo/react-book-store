@@ -41,6 +41,23 @@
   margin-top: 12px;
 }
 
+.first-button:hover {
+  border-left: gray solid 2px;
+  border-bottom: gray solid 2px;
+  border-top: gray solid 2px;
+}
+
+.last-button:hover {
+  border-right: gray solid 2px;
+  border-bottom: gray solid 2px;
+  border-top: gray solid 2px;
+}
+
+.middle-button:hover {
+  border-bottom: gray solid 2px;
+  border-top: gray solid 2px;
+}
+
 .non-first-button {
   border-left: solid gray 2px;
 }
