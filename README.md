@@ -1,70 +1,186 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
 
-## Available Scripts
+Modify this file to match your project and remove sections that don't apply.
 
-In the project directory, you can run:
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
 
-### `npm start`
+OPTIONAL SECTIONS:
+- FAQ
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+After you're finished please remove all the comments and instructions!
+-->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <!-- <img src="./src/images/s_logo.png" alt="logo" width="140"  height="auto" /> -->
+  <br/>
 
-### `npm test`
+  <h3><b>Book Store</b></h3>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 📗 Table of Contents
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+  - [💻 Project Presentation](#presentation)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- PROJECT DESCRIPTION  -->
 
-### `npm run eject`
+# 📖 Book Store <a name="about-project"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Welcome to the extraordinary world of our upgraded book store app, where the power of React brings books and authors to life. Immerse yourself in a captivating experience that effortlessly combines the joy of browsing with the convenience of digital technology.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+As you enter the app, a mesmerizing display unfolds before your eyes, presenting a meticulously organized collection of books and their esteemed authors. Each entry invites you to explore the captivating worlds that lie within their pages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+With a simple touch of a button, you have the power to shape your own literary universe. Select any book, and with a graceful click, watch it disappear as if by magic. Deleting a book has never been more satisfying and effortless.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+But fear not, for the app's shelves are always replenished with new discoveries waiting to be made. Scroll through the list of all books, where a treasure trove of titles and authors awaits your eager gaze. Lose yourself in the enchanting descriptions and captivating cover art that adorn each entry.
 
-## Learn More
+And should you wish to add your own tale to this digital realm, our app provides you with a gateway to creativity. With a few simple inputs, you can bring a new book into existence, contributing to the ever-growing tapestry of literary wonders.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Join us in this extraordinary journey where the magic of React breathes life into books, authors, and the boundless possibilities of the written word. Explore, delete, discover, and create as you embrace the seamless blend of technology and literature in our remarkable book store app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠 Built With <a name="built-with"></a>
 
-### Code Splitting
+### Tech Stack <a name="tech-stack"></a>
+- HTML/CSS/JS/JSX
+- React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<!-- Features -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Key Features <a name="key-features"></a>
+- Add new books
+- List existing books and their authors
+- Remove individual books
+- Navigate between different menus
 
-### Making a Progressive Web App
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- LIVE DEMO  -->
 
-### Advanced Configuration
+## 🚀 Live Demo <a name="live-demo"></a>
+- Comming soon
+<!-- - Click <a href="https://wacoo.github.io/DEF-CON_Summit/">here</a> to open the live demo. -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 💻 Project Presentation <a name="presentation"></a>
+<!-- - Click <a href="">here</a> to open the presentation. -->
+- Comming soon
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- GETTING STARTED -->
 
-### Deployment
+## 💻 Getting Started <a name="getting-started"></a>
+To get a local copy up and running, follow these steps.
+- Open the index.html with a web browser (Chrome, Firefox, Safari...)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Prerequisites
 
-### `npm run build` fails to minify
+In order to run this project you need:
+- A web browser (Chrome, Firefox, Safari...)
+<!--
+Example command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+ gem install rails
+```
+ -->
+
+### Setup
+Clone the repository to desired directory on local computer.
+> `git clone https://github.com/wacoo/smart-math-magicians-react`
+
+> `cd smart-math-magicians-react`
+
+> `npm install`
+
+> `npm start`
+
+## 👥 Author <a name="authors"></a>
+- GitHub: [@wacoo](https://github.com/wacoo)
+- Twitter: [@wabaham9](https://twitter.com/wabaham9)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/wondmagegn-abriham-b867289a)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+- **Enhanced Functionality**: Introduce additional book store functions.
+- **Customization Options**: Provide users with the ability to customize the interface according to their preferences, including themes, color schemes, and layout options.
+- **Interactive Learning Resources**: Incorporate interactive tutorials, step-by-step problem-solving guides, and educational resources.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+- I'm a freelance developer. If you like my work, please support me by spreading the word.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+- I want to thank all my clients for their patronage.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+- **How can I find you?**
+
+  - Please find my contact information below.
+
+- **Can you give me a price range for your services?**
+
+  - To get price range, please contact me with: wabaham9@gmail.com
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](MIT.md) licensed.

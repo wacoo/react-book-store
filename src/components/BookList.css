@@ -1,0 +1,19 @@
+.book-list {
+  width: 70%;
+  padding: 24px;
+}
+
+.book-list-wrapper {
+  width: 100%;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+}
+
+.book-list h1 {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(236, 236, 235);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#root {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  color: #fff;
+  padding: 7px 20px;
+  background-color: rgb(32, 190, 243);
+  border-radius: 5px;
+  font-weight: 600;
+  border: 0;
+}

@@ -1,0 +1,33 @@
+.frm {
+  width: 70%;
+  min-height: 200px;
+}
+
+.frm div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.frm input {
+  width: 75%;
+  height: 20px;
+  text-align: center;
+  margin-right: 12px;
+}
+
+.frm select {
+  background-color: #fff;
+  border: gray solid 1px;
+  width: 30%;
+  height: 25px;
+}
+
+.info {
+  margin: 0 8px;
+}
+
+.book-list-wrapper h3 {
+  width: 70%;
+  margin: 12px 0;
+}

@@ -1,0 +1,50 @@
+.book {
+  min-height: 150px;
+  display: grid;
+  grid-template-columns: 45% 30% 30%;
+  background-color: #fff;
+  padding: 24px;
+  margin: 24px 0;
+  border-radius: 5px;
+}
+
+.progress {
+  width: 70px;
+  height: 70px;
+}
+
+.book p {
+  margin: 0;
+  color: gray;
+}
+
+.book-col h3 {
+  margin: 0;
+}
+
+.book-col .category {
+  font-size: 14px;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.book-col button {
+  padding: 0;
+  width: 80px;
+  height: 30px;
+  color: gray;
+  background-color: #fff;
+  border-radius: 0;
+}
+
+.action-buttons {
+  margin-top: 12px;
+}
+
+.non-first-button {
+  border-left: solid gray 2px;
+}
+
+.book .button {
+  font-weight: 400;
+}
