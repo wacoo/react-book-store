@@ -86,18 +86,6 @@ Join us in this extraordinary journey where the magic of React breathes life int
 - Navigate between different menus
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO  -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-- Comming soon
-<!-- - Click <a href="https://wacoo.github.io/DEF-CON_Summit/">here</a> to open the live demo. -->
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 💻 Project Presentation <a name="presentation"></a>
-<!-- - Click <a href="">here</a> to open the presentation. -->
-- Comming soon
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
