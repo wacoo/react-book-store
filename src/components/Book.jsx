@@ -9,14 +9,14 @@ const Book = () => {
   const dispatch = useDispatch();
 
   return books.map((book) => (
-    <div className="book" id={book.id} key={book.id}>
+    <div className="book" id={book.item_id} key={book.item_id}>
       <div className="book-col">
         <p className="category">{book.category}</p>
-        <h3>{book.book}</h3>
+        <h3>{book.title}</h3>
         <p>{book.author}</p>
         <div className="action-buttons">
           <button type="button" className="first-button">Comments</button>
-          <button className="non-first-button middle-button" type="button" onClick={() => dispatch(removeBook(book.id))}>
+          <button className="non-first-button middle-button" type="button" onClick={() => dispatch(removeBook(book.item_id))}>
             Remove
           </button>
           <button className="non-first-button last-button" type="button">
@@ -25,14 +25,14 @@ const Book = () => {
         </div>
       </div>
       <div className="progress">
-        <CircularProgressbar value={book.progress} text={`${book.progress}%`} />
+        <CircularProgressbar value={0} text={`${0}%`} />
         <p>Completed</p>
       </div>
       <div>
         <p className="chapter-title">CONTENT CHAPTER</p>
         <span>
           {'Chapter '}
-          {book.chapter}
+          {0}
         </span>
         <br />
         <br />

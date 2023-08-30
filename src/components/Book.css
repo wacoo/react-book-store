@@ -58,6 +58,11 @@
   border-top: gray solid 2px;
 }
 
+.action-buttons button:active {
+  background-color: #000;
+  color: #fff;
+}
+
 .non-first-button {
   border-left: solid gray 2px;
 }

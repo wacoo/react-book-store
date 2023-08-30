@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addBook } from '../features/books/bookSlice';
 
 const Form = () => {
-  const [uid, setUid] = useState(2);
+  const [uid, setUid] = useState(5);
   const dispatch = useDispatch();
   const [formStyle, setFormStyle] = useState({
     info: {
@@ -13,12 +13,10 @@ const Form = () => {
     },
   });
   const [newBook, setNewBook] = useState({
-    id: 1,
-    book: 'New book',
+    item_id: 'item4',
+    title: 'New book',
     author: 'Unknown Author',
     category: 'Unknown Category',
-    progress: 0,
-    chapter: '0: Unknown',
   });
 
   const categories = [
@@ -50,7 +48,16 @@ const Form = () => {
               name="book"
               placeholder="Book"
               onChange={(e) => {
-                updateData('book', e.target.value);
+                updateData('title', e.target.value);
+              }}
+            />
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Author"
+              onChange={(e) => {
+                updateData('author', e.target.value);
               }}
             />
             <select
@@ -67,7 +74,7 @@ const Form = () => {
               onClick={(e) => {
                 e.preventDefault();
                 setUid((prev) => prev + 1);
-                updateData('id', uid);
+                updateData('item_id', `item${uid}`);
                 dispatch(addBook(newBook));
                 setFormStyle({
                   info: {
