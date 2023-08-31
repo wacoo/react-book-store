@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Form.css';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { postBook, getBook } from '../features/books/bookSlice';
 
 const Form = () => {
@@ -60,7 +60,6 @@ const Form = () => {
           },
         });
       }, 5000);
-      console.log(books);
     });
   };
 
