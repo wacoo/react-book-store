@@ -10,7 +10,7 @@
 }
 
 .frm input {
-  width: 75%;
+  width: 50%;
   height: 20px;
   text-align: center;
   margin-right: 12px;
@@ -30,4 +30,8 @@
 .book-list-wrapper h3 {
   width: 70%;
   margin: 12px 0;
+}
+
+.frm button {
+  margin-left: 12px;
 }

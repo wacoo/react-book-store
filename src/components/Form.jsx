@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Form.css';
-import { useDispatch } from 'react-redux';
-import { addBook } from '../features/books/bookSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { postBook, getBook } from '../features/books/bookSlice';
 
 const Form = () => {
-  const [uid, setUid] = useState(2);
+  const books = useSelector((store) => store.book.books);
+  const [uid, setUid] = useState(5);
   const dispatch = useDispatch();
   const [formStyle, setFormStyle] = useState({
     info: {
@@ -12,13 +13,12 @@ const Form = () => {
       color: 'green',
     },
   });
+
   const [newBook, setNewBook] = useState({
-    id: 1,
-    book: 'New book',
+    item_id: 'item4',
+    title: 'New book',
     author: 'Unknown Author',
     category: 'Unknown Category',
-    progress: 0,
-    chapter: '0: Unknown',
   });
 
   const categories = [
@@ -38,11 +38,38 @@ const Form = () => {
     setNewBook(bok);
   };
 
+  useEffect(() => {
+    dispatch(getBook());
+  }, [dispatch]);
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setUid((prev) => prev + 1);
+    updateData('item_id', `item${uid}`);
+    dispatch(postBook(newBook)).then(() => {
+      setFormStyle({
+        info: {
+          display: 'inline',
+          color: 'green',
+        },
+      });
+      setTimeout(() => {
+        setFormStyle({
+          info: {
+            display: 'none',
+            color: 'green',
+          },
+        });
+      }, 5000);
+      console.log(books);
+    });
+  };
+
   return (
     <>
       <div className="book-list-wrapper">
         <h3>ADD A NEW BOOK</h3>
-        <form className="frm" action="#" method="post">
+        <form className="frm" action="#" method="post" onSubmit={handleFormSubmit}>
           <div>
             <input
               type="text"
@@ -50,7 +77,16 @@ const Form = () => {
               name="book"
               placeholder="Book"
               onChange={(e) => {
-                updateData('book', e.target.value);
+                updateData('title', e.target.value);
+              }}
+            />
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="Author"
+              onChange={(e) => {
+                updateData('author', e.target.value);
               }}
             />
             <select
@@ -59,37 +95,17 @@ const Form = () => {
               onChange={(e) => updateData('category', e.target.value)}
             >
               {categories.map((category) => (
-                <option key={category} value={category}>{category}</option>
+                <option key={category} value={category}>
+                  {category}
+                </option>
               ))}
             </select>
-            <button
-              type="submit"
-              onClick={(e) => {
-                e.preventDefault();
-                setUid((prev) => prev + 1);
-                updateData('id', uid);
-                dispatch(addBook(newBook));
-                setFormStyle({
-                  info: {
-                    display: 'inline',
-                    color: 'green',
-                  },
-                });
-                setTimeout(() => {
-                  setFormStyle({
-                    info: {
-                      display: 'none',
-                      color: 'green',
-                    },
-                  });
-                }, 5000);
-              }}
-            >
-              Add
-            </button>
+            <button type="submit">Add</button>
           </div>
           <div>
-            <span style={formStyle.info} className="info">Success!</span>
+            <span style={formStyle.info} className="info">
+              Success
+            </span>
           </div>
         </form>
       </div>
