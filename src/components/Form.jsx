@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { postBook, getBook } from '../features/books/bookSlice';
 
 const Form = () => {
-  const books = useSelector((store) => store.book.books);
   const [uid, setUid] = useState(5);
   const dispatch = useDispatch();
   const [formStyle, setFormStyle] = useState({
