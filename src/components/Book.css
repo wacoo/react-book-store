@@ -15,47 +15,61 @@
 
 .book p {
   margin: 0;
-  color: gray;
-}
-
-.book-col h3 {
-  margin: 0;
 }
 
 .book-col .category {
   font-size: 14px;
   margin-bottom: 3px;
   font-weight: 600;
+  color: gray;
 }
 
 .book-col button {
   padding: 0;
   width: 80px;
   height: 30px;
-  color: gray;
   background-color: #fff;
   border-radius: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(75, 170, 202);
+  font-family: 'Roboto Slab', serif;
+}
+
+.book h3 {
+  color: gray;
+}
+
+.book-col .author {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
 }
 
 .action-buttons {
   margin-top: 12px;
 }
 
+.action-buttons button {
+  width: 100px;
+  margin-top: 12px;
+  padding: 0 5px;
+}
+
 .first-button:hover {
-  border-left: gray solid 2px;
-  border-bottom: gray solid 2px;
-  border-top: gray solid 2px;
+  border-left: lightgray solid 2px;
+  border-bottom: lightgray solid 2px;
+  border-top: lightgray solid 2px;
 }
 
 .last-button:hover {
-  border-right: gray solid 2px;
-  border-bottom: gray solid 2px;
-  border-top: gray solid 2px;
+  border-right: lightgray solid 2px;
+  border-bottom: lightgray solid 2px;
+  border-top: lightgray solid 2px;
 }
 
 .middle-button:hover {
-  border-bottom: gray solid 2px;
-  border-top: gray solid 2px;
+  border-bottom: lightgray solid 2px;
+  border-top: lightgray solid 2px;
 }
 
 .action-buttons button:active {
@@ -64,9 +78,22 @@
 }
 
 .non-first-button {
-  border-left: solid gray 2px;
+  border-left: solid lightgray 2px;
 }
 
 .book .button {
+  font-weight: 400;
+}
+
+.chapter-title {
+  color: gray;
+}
+
+.book span {
+  color: gray;
+}
+
+.progress p {
+  color: gray;
   font-weight: 400;
 }

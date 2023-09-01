@@ -17,7 +17,7 @@ const Book = () => {
       <div className="book-col">
         <p className="category">{book.category}</p>
         <h3>{book.title}</h3>
-        <p>{book.author}</p>
+        <p className="author">{book.author}</p>
         <div className="action-buttons">
           <button type="button" className="first-button">
             Comments
@@ -39,7 +39,7 @@ const Book = () => {
         <p>Completed</p>
       </div>
       <div>
-        <p className="chapter-title">CONTENT CHAPTER</p>
+        <p className="chapter-title">CURRENT CHAPTER</p>
         <span>
           {'Chapter '}
           {0}

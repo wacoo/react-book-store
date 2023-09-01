@@ -1,6 +1,8 @@
 .book-list {
   width: 70%;
   padding: 24px;
+  color: rgb(75, 170, 202);
+  font-family: 'Roboto Slab', serif;
 }
 
 .book-list-wrapper {

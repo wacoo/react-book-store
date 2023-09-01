@@ -4,10 +4,10 @@ import './NavBar.css';
 const NavBar = () => (
   <header className="header">
     <>
-      <h1>Book store</h1>
+      <h1>Book store CMS</h1>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/categories">Categories</Link></li>
+        <li><Link to="/">HOME</Link></li>
+        <li><Link to="/categories">CATEGORIES</Link></li>
       </ul>
     </>
   </header>
