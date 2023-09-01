@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Form.css';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../features/books/bookSlice';
+import { postBook, getBook } from '../features/books/bookSlice';
 
 const Form = () => {
   const [uid, setUid] = useState(5);
@@ -12,6 +12,7 @@ const Form = () => {
       color: 'green',
     },
   });
+
   const [newBook, setNewBook] = useState({
     item_id: 'item4',
     title: 'New book',
@@ -36,11 +37,37 @@ const Form = () => {
     setNewBook(bok);
   };
 
+  useEffect(() => {
+    dispatch(getBook());
+  }, [dispatch]);
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setUid((prev) => prev + 1);
+    updateData('item_id', `item${uid}`);
+    dispatch(postBook(newBook)).then(() => {
+      setFormStyle({
+        info: {
+          display: 'inline',
+          color: 'green',
+        },
+      });
+      setTimeout(() => {
+        setFormStyle({
+          info: {
+            display: 'none',
+            color: 'green',
+          },
+        });
+      }, 5000);
+    });
+  };
+
   return (
     <>
       <div className="book-list-wrapper">
         <h3>ADD A NEW BOOK</h3>
-        <form className="frm" action="#" method="post">
+        <form className="frm" action="#" method="post" onSubmit={handleFormSubmit}>
           <div>
             <input
               type="text"
@@ -66,37 +93,17 @@ const Form = () => {
               onChange={(e) => updateData('category', e.target.value)}
             >
               {categories.map((category) => (
-                <option key={category} value={category}>{category}</option>
+                <option key={category} value={category}>
+                  {category}
+                </option>
               ))}
             </select>
-            <button
-              type="submit"
-              onClick={(e) => {
-                e.preventDefault();
-                setUid((prev) => prev + 1);
-                updateData('item_id', `item${uid}`);
-                dispatch(addBook(newBook));
-                setFormStyle({
-                  info: {
-                    display: 'inline',
-                    color: 'green',
-                  },
-                });
-                setTimeout(() => {
-                  setFormStyle({
-                    info: {
-                      display: 'none',
-                      color: 'green',
-                    },
-                  });
-                }, 5000);
-              }}
-            >
-              Add
-            </button>
+            <button type="submit">Add</button>
           </div>
           <div>
-            <span style={formStyle.info} className="info">Success!</span>
+            <span style={formStyle.info} className="info">
+              Success
+            </span>
           </div>
         </form>
       </div>
