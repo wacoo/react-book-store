@@ -35,8 +35,10 @@ const Book = () => {
         </div>
       </div>
       <div className="progress">
-        <CircularProgressbar value={0} text={`${0}%`} />
-        <p>Completed</p>
+        <div className="circle">
+          <CircularProgressbar value={0} text='' />
+        </div>
+        <div className="percent">0%</div>
       </div>
       <div>
         <p className="chapter-title">CURRENT CHAPTER</p>

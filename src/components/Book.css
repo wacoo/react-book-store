@@ -18,7 +18,8 @@
 }
 
 .book-col .category {
-  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
   margin-bottom: 3px;
   font-weight: 600;
   color: gray;
@@ -32,16 +33,19 @@
   border-radius: 0;
   font-size: 15px;
   font-weight: 400;
-  color: rgb(75, 170, 202);
+  color: #4386bf;
   font-family: 'Roboto Slab', serif;
 }
 
 .book h3 {
+  font-size: 1.375rem;
   color: gray;
 }
 
 .book-col .author {
+  font-size: 0.875rem;
   font-family: 'Roboto Slab', serif;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -96,4 +100,23 @@
 .progress p {
   color: gray;
   font-weight: 400;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #4386bf;
+}
+
+.percent {
+  width: 100px;
+  height: 100px;  
+  text-align: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.progress {
+  display: flex;
+  width: 250px;
 }

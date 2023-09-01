@@ -23,16 +23,21 @@
 
 .header a {
   text-decoration: none;
-  color: gray;
+  color: #a5a5a7;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header a:hover {
-  color: #3d3d3d;
+  color: #121212;
 }
 
 .header a:active {
   color: lightgray;
+}
+
+.active {
+  color: #121212;
 }
