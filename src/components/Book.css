@@ -95,10 +95,22 @@
 
 .chapter-title {
   color: gray;
+  font-weight: 300;
 }
 
 .book span {
   color: gray;
+}
+
+.chapter span {
+  color: #000;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.book .chapter button {
+  background-color: #0290ff;
+  font-weight: 300;
 }
 
 .progress p {

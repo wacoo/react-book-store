@@ -3,13 +3,12 @@
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #fff;
 }
 
 .header h1 {
-  color: rgb(32, 190, 243);
-  margin: 0 24px;
+  color: #0290ff;
 }
 
 .header ul {
@@ -47,7 +46,6 @@
   width: 4rem;
   height: 4rem;
   border: lightgray solid 2px;
-  margin: 0 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,4 +55,11 @@
 .logo-menu {
   display: flex;
   align-items: center;
+}
+
+.header-wrapper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

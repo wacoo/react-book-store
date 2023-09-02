@@ -67,45 +67,49 @@ const Form = () => {
     <>
       <div className="book-list-wrapper">
         <h3>ADD A NEW BOOK</h3>
-        <form className="frm" action="#" method="post" onSubmit={handleFormSubmit}>
-          <div>
-            <input
-              type="text"
-              id="book"
-              name="book"
-              placeholder="Book"
-              onChange={(e) => {
-                updateData('title', e.target.value);
-              }}
-            />
-            <input
-              type="text"
-              id="author"
-              name="author"
-              placeholder="Author"
-              onChange={(e) => {
-                updateData('author', e.target.value);
-              }}
-            />
-            <select
-              name="category"
-              id="category"
-              onChange={(e) => updateData('category', e.target.value)}
-            >
-              {categories.map((category) => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
-              ))}
-            </select>
-            <button type="submit">Add</button>
-          </div>
-          <div>
-            <span style={formStyle.info} className="info">
-              Success
-            </span>
-          </div>
+        <form
+          className="frm"
+          action="#"
+          method="post"
+          onSubmit={handleFormSubmit}
+        >
+          <input
+            type="text"
+            id="book"
+            name="book"
+            placeholder="Book"
+            onChange={(e) => {
+              updateData("title", e.target.value);
+            }}
+          />
+          <input
+            type="text"
+            id="author"
+            name="author"
+            placeholder="Author"
+            onChange={(e) => {
+              updateData("author", e.target.value);
+            }}
+          />
+          <select
+            name="category"
+            id="category"
+            onChange={(e) => updateData("category", e.target.value)}
+          >
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+          <button type="submit">ADD BOOK</button>
         </form>
+        <div className="info-wrapper">
+          <span style={formStyle.info} className="info">
+            Success
+          </span>
+        </div>
+        
       </div>
     </>
   );
