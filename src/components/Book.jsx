@@ -36,15 +36,19 @@ const Book = () => {
       </div>
       <div className="progress">
         <div className="circle">
-          <CircularProgressbar value={0} text='' />
+          <CircularProgressbar className="progress-circle" value={40} text="" />
         </div>
-        <div className="percent">0%</div>
+        <div className="percent">
+          <span className="prs">40%</span>
+          <br />
+          <span>Completed</span>
+        </div>
       </div>
       <div>
         <p className="chapter-title">CURRENT CHAPTER</p>
         <span>
           {'Chapter '}
-          {0}
+          {4}
         </span>
         <br />
         <br />

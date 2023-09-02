@@ -2,6 +2,7 @@
   min-height: 150px;
   display: grid;
   grid-template-columns: 45% 30% 30%;
+  align-items: center;
   background-color: #fff;
   padding: 24px;
   margin: 24px 0;
@@ -9,8 +10,11 @@
 }
 
 .progress {
-  width: 70px;
   height: 70px;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .book p {
@@ -105,18 +109,33 @@
 .circle {
   width: 100px;
   height: 100px;
-  background-color: #4386bf;
 }
 
 .percent {
   width: 100px;
-  height: 100px;  
+  height: 40px;
   text-align: center;
-  align-items: center;
-  background-color: aqua;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
 }
 
-.progress {
-  display: flex;
-  width: 250px;
+.percent span {
+  font-size: 0.875rem;
+  padding: 0;
+  margin: 0;
+}
+
+.percent p {
+  padding: 0;
+  margin: 0;
+}
+
+.progress-circle {
+  width: 90px;
+  height: 90px;
+}
+
+span.prs {
+  font-size: 30px;
 }
