@@ -3,6 +3,7 @@
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: #fff;
 }
 
@@ -40,4 +41,20 @@
 
 .active {
   color: #121212;
+}
+
+.mask {
+  width: 4rem;
+  height: 4rem;
+  border: lightgray solid 2px;
+  margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
 }

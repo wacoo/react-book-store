@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 import PropTypes from 'prop-types';
+import Head from '../img/head.png';
 
 const NavBar = (props) => {
   const { active } = props;
@@ -9,26 +10,29 @@ const NavBar = (props) => {
   return (
     <header className="header">
       <>
+      <div className="logo-menu">
         <h1>Book store CMS</h1>
         <ul>
-          <li>
-            <NavLink
-              style={home}
-              to="/"
-            >
-              HOME
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              style={cat}
-              to="/categories"
-              target="_blank"
-            >
-              CATEGORIES
-            </NavLink>
-          </li>
+            <li>
+              <NavLink
+                style={home}
+                to="/"
+              >
+                HOME
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                style={cat}
+                to="/categories"
+                target="_blank"
+              >
+                CATEGORIES
+              </NavLink>
+            </li>
         </ul>
+      </div>
+      <div class="mask"><img src={Head} alt="Head" /></div>
       </>
     </header>
   );
