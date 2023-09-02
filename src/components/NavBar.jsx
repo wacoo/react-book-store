@@ -10,24 +10,24 @@ const NavBar = (props) => {
     <header className="header">
       <div className="header-wrapper">
         <div className="logo-menu">
-            <h1>Book store CMS</h1>
-            <ul>
-              <li>
-                <NavLink style={home} to="/">
-                  HOME
-                </NavLink>
-              </li>
-              <li>
-                <NavLink style={cat} to="/categories" target="_blank">
-                  CATEGORIES
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-          <div className="mask">
-            <img src={Head} alt="Head" />
-          </div>
-      </div> 
+          <h1>Book store CMS</h1>
+          <ul>
+            <li>
+              <NavLink style={home} to="/">
+                HOME
+              </NavLink>
+            </li>
+            <li>
+              <NavLink style={cat} to="/categories" target="_blank">
+                CATEGORIES
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="mask">
+          <img src={Head} alt="Head" />
+        </div>
+      </div>
     </header>
   );
 };

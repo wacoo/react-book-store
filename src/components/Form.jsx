@@ -79,7 +79,7 @@ const Form = () => {
             name="book"
             placeholder="Book"
             onChange={(e) => {
-              updateData("title", e.target.value);
+              updateData('title', e.target.value);
             }}
           />
           <input
@@ -88,13 +88,13 @@ const Form = () => {
             name="author"
             placeholder="Author"
             onChange={(e) => {
-              updateData("author", e.target.value);
+              updateData('author', e.target.value);
             }}
           />
           <select
             name="category"
             id="category"
-            onChange={(e) => updateData("category", e.target.value)}
+            onChange={(e) => updateData('category', e.target.value)}
           >
             {categories.map((category) => (
               <option key={category} value={category}>
@@ -109,7 +109,6 @@ const Form = () => {
             Success
           </span>
         </div>
-        
       </div>
     </>
   );
