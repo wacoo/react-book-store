@@ -5,9 +5,10 @@ import Form from './Form';
 
 const BookList = () => {
   const style = {
-    home: {color: '#121212'},
-    cat: {color: '#a5a5a7'},
-  }
+    home: { color: '#121212' },
+    cat: { color: '#a5a5a7' },
+  };
+
   return (
     <>
       <NavBar active={style} />
@@ -17,6 +18,6 @@ const BookList = () => {
       <Form />
     </>
   );
-}
+};
 
 export default BookList;

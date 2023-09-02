@@ -6,33 +6,27 @@ import Head from '../img/head.png';
 const NavBar = (props) => {
   const { active } = props;
   const { home, cat } = active;
-  console.log(home);
   return (
     <header className="header">
       <>
-      <div className="logo-menu">
-        <h1>Book store CMS</h1>
-        <ul>
+        <div className="logo-menu">
+          <h1>Book store CMS</h1>
+          <ul>
             <li>
-              <NavLink
-                style={home}
-                to="/"
-              >
+              <NavLink style={home} to="/">
                 HOME
               </NavLink>
             </li>
             <li>
-              <NavLink
-                style={cat}
-                to="/categories"
-                target="_blank"
-              >
+              <NavLink style={cat} to="/categories" target="_blank">
                 CATEGORIES
               </NavLink>
             </li>
-        </ul>
-      </div>
-      <div class="mask"><img src={Head} alt="Head" /></div>
+          </ul>
+        </div>
+        <div className="mask">
+          <img src={Head} alt="Head" />
+        </div>
       </>
     </header>
   );
