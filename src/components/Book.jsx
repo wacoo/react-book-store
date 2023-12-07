@@ -17,7 +17,7 @@ const Book = () => {
       <div className="book-col">
         <p className="category">{book.category}</p>
         <h3>{book.title}</h3>
-        <p>{book.author}</p>
+        <p className="author">{book.author}</p>
         <div className="action-buttons">
           <button type="button" className="first-button">
             Comments
@@ -35,14 +35,20 @@ const Book = () => {
         </div>
       </div>
       <div className="progress">
-        <CircularProgressbar value={0} text={`${0}%`} />
-        <p>Completed</p>
+        <div className="circle">
+          <CircularProgressbar className="progress-circle" value={40} text="" />
+        </div>
+        <div className="percent">
+          <span className="prs">40%</span>
+          <br />
+          <span>Completed</span>
+        </div>
       </div>
-      <div>
-        <p className="chapter-title">CONTENT CHAPTER</p>
+      <div className="chapter">
+        <p className="chapter-title">CURRENT CHAPTER</p>
         <span>
           {'Chapter '}
-          {0}
+          {4}
         </span>
         <br />
         <br />

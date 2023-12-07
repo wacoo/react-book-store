@@ -2,6 +2,7 @@
   min-height: 150px;
   display: grid;
   grid-template-columns: 45% 30% 30%;
+  align-items: center;
   background-color: #fff;
   padding: 24px;
   margin: 24px 0;
@@ -9,53 +10,74 @@
 }
 
 .progress {
-  width: 70px;
   height: 70px;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .book p {
   margin: 0;
-  color: gray;
-}
-
-.book-col h3 {
-  margin: 0;
 }
 
 .book-col .category {
-  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
   margin-bottom: 3px;
   font-weight: 600;
+  color: gray;
 }
 
 .book-col button {
   padding: 0;
   width: 80px;
   height: 30px;
-  color: gray;
   background-color: #fff;
   border-radius: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #4386bf;
+  font-family: 'Roboto Slab', serif;
+}
+
+.book h3 {
+  font-size: 1.375rem;
+  color: black;
+}
+
+.book-col .author {
+  font-size: 0.875rem;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  margin: 0;
 }
 
 .action-buttons {
   margin-top: 12px;
 }
 
+.action-buttons button {
+  width: 100px;
+  margin-top: 12px;
+  padding: 0 5px;
+}
+
 .first-button:hover {
-  border-left: gray solid 2px;
-  border-bottom: gray solid 2px;
-  border-top: gray solid 2px;
+  border-left: lightgray solid 2px;
+  border-bottom: lightgray solid 2px;
+  border-top: lightgray solid 2px;
 }
 
 .last-button:hover {
-  border-right: gray solid 2px;
-  border-bottom: gray solid 2px;
-  border-top: gray solid 2px;
+  border-right: lightgray solid 2px;
+  border-bottom: lightgray solid 2px;
+  border-top: lightgray solid 2px;
 }
 
 .middle-button:hover {
-  border-bottom: gray solid 2px;
-  border-top: gray solid 2px;
+  border-bottom: lightgray solid 2px;
+  border-top: lightgray solid 2px;
 }
 
 .action-buttons button:active {
@@ -64,9 +86,68 @@
 }
 
 .non-first-button {
-  border-left: solid gray 2px;
+  border-left: solid lightgray 2px;
 }
 
 .book .button {
   font-weight: 400;
+}
+
+.chapter-title {
+  color: gray;
+  font-weight: 300;
+}
+
+.book span {
+  color: gray;
+}
+
+.chapter span {
+  color: #000;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.book .chapter button {
+  background-color: #0290ff;
+  font-weight: 300;
+}
+
+.progress p {
+  color: gray;
+  font-weight: 400;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+}
+
+.percent {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+.percent span {
+  font-size: 0.875rem;
+  padding: 0;
+  margin: 0;
+}
+
+.percent p {
+  padding: 0;
+  margin: 0;
+}
+
+.progress-circle {
+  width: 90px;
+  height: 90px;
+}
+
+span.prs {
+  font-size: 30px;
 }
